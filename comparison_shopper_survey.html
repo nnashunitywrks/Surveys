@@ -1,8 +1,18 @@
+<!-- Qualifier -->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      1. Do you plan on buying a car in the next 24 months?<span style="color:red;">*</span>
+    </strong>
+    <div class="radio"><label><input name="qualifier" required="" type="radio" value="Yes" />Yes</label></div>
+    <div class="radio"><label><input name="qualifier" required="" type="radio" value="No" />No</label></div>
+  </div>
+</div>
 <!-- New/Used -->
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      1. Are you buying...<span style="color:red;">*</span>
+      2. Are you buying...<span style="color:red;">*</span>
     </strong>
     <div class="radio"><label><input name="status" required="" type="radio" value="New" />New</label></div>
     <div class="radio"><label><input name="status" required="" type="radio" value="Used" />Used</label></div>
@@ -12,27 +22,13 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      2. What do you know about your next vehicle?<span style="color:red;">*</span>
+      3. What do you know about your next vehicle? (check all that apply)<span style="color:red;">*</span>
     </strong>
     <div class="checkbox"><label><input name="details" required="" type="checkbox" value="Body style" />Body style (Sedan, SUV/Crossover, Truck etc.)</label></div>
     <div class="checkbox"><label><input name="details" required="" type="checkbox" value="Year" />Year</label></div>
     <div class="checkbox"><label><input name="details" required="" type="checkbox" value="Make" />Make</label></div>
     <div class="checkbox"><label><input name="details" required="" type="checkbox" value="Model" />Model</label></div>
     <div class="checkbox"><label><input name="details" required="" type="checkbox" value="Don't know" />Don't know</label></div>
-  </div>
-</div>
-<!-- Purchase Intent -->
-<div class="panel panel-default">
-  <div class="panel-body">
-    <strong>
-      3. Why are you purchasing a new vehicle?<span style="color:red;">*</span>
-    </strong>
-    <div class="checkbox"><label><input name="intent" required="" type="checkbox" value="Family" />Family/Dependents</label></div>
-    <div class="checkbox"><label><input name="intent" required="" type="checkbox" value="More space" />More space/larger vehicle</label></div>
-    <div class="checkbox"><label><input name="intent" required="" type="checkbox" value="Features" />Better features</label></div>
-    <div class="checkbox"><label><input name="intent" required="" type="checkbox" value="Affordability" />Can afford to buy/lease another vehicle</label></div>
-    <div class="checkbox"><label><input name="intent" required="" type="checkbox" value="Reliability" />Improve reliability</label></div>
-    <div class="checkbox"><label><input name="intent" required="" type="checkbox" value="Image" />Better brand/image</label></div>
   </div>
 </div>
 <!-- Brand Consideration -->
@@ -61,7 +57,7 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      5. Which tools do you find most helpful? (check all that apply)<span style="color:red;">*</span>
+      5. Which online tools do you find most helpful? (check all that apply)<span style="color:red;">*</span>
     </strong>
     <div class="checkbox"><label><input name="tools" required="" type="checkbox" value="Compare models" />Compare models</label></div>
     <div class="checkbox"><label><input name="tools" required="" type="checkbox" value="Build and configure" />Build/configure &amp; price</label></div>
@@ -71,16 +67,57 @@
     <div class="checkbox"><label><input name="tools" required="" type="checkbox" value="Video overview" />Video overview</label></div>
   </div>
 </div>
+<!--Device usage-->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      6. Which devices do you use while shopping for a new car?<span style="color:red;">*</span>
+    </strong>
+  </div>
+  <div class="checkbox"><label><input name="devices" required="" type="checkbox" value="Desktop/laptop" />Desktop/laptop</label></div>
+  <div class="checkbox"><label><input name="devices" required="" type="checkbox" value="Tablet" />Tablet</label></div>
+  <div class="checkbox"><label><input name="devices" required="" type="checkbox" value="Mobile phone" />Mobile phone</label></div>
+</div>
 <!-- Time -->
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      6. How much time have you spent looking for a new car?<span style="color:red;">*</span>
+      7. Where are you when shopping for a car?<span style="color:red;">*</span>
     </strong>
-    <div class="radio"><label><input name="time" required="" type="radio" value="1-4 hours" />1-4 hours</label></div>
-    <div class="radio"><label><input name="time" required="" type="radio" value="5-11 hours" />5-11 hours</label></div>
-    <div class="radio"><label><input name="time" required="" type="radio" value="12 hours or more" />12 hours or more</label></div>
-    <div class="radio"><label><input name="time" required="" type="radio" value="Don't know" />Don't know</label></div>
+    <div class="form-group">
+      <textarea class="form-control" cols="250" id="Location" name="Location" required="" rows="6"></textarea>
+    </div>
   </div>
 </div>
-<!--Device usage-->
+<!-- Purchase Intent -->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      8. Why are you purchasing a new vehicle?<span style="color:red;">*</span>
+    </strong>
+    <div class="form-group">
+      <textarea class="form-control" cols="250" id="PurchaseIntent" name="PurchaseIntent" required="" rows="6"></textarea>
+    </div>
+</div>
+<!-- Pain points-->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      9. What do you dislike the most about buying a new car?<span style="color:red;">*</span>
+    </strong>
+    <div class="form-group">
+      <textarea class="form-control" cols="250" id="PainPoints" name="PainPoints" required="" rows="6"></textarea>
+    </div>
+  </div>
+</div>
+<!-- Improvements-->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      10. How could shopping for cars online be easier?<span style="color:red;">*</span>
+    </strong>
+    <div class="form-group">
+      <textarea class="form-control" cols="250" id="OnlineShopping" name="OnlineShopping" required="" rows="6"></textarea>
+    </div>
+  </div>
+</div>
