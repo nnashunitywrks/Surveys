@@ -2,23 +2,90 @@
 <p>We are conducting market research to better serve our customers who shop for vehicles online.</p>
 <ol>
   <li>Complete the following survey.</li>
+  <li>Use as much detail as possible.</li>
 </ol>
 <p>Acceptance criteria: Your work may or may not be rejected based on internal acceptance criteria.</p>
+<p>Items marked with a (<span style="color:red;">*</span>) are mandatory</p>
 <!-- Qualifier -->
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      1. Do you plan on buying a car in the next 24 months?<span style="color:red;">*</span>
+    Have you purchased a car in the past 24 months?<span style="color:red;">*</span>
     </strong>
     <div class="radio"><label><input name="qualifier" required="" type="radio" value="Yes" />Yes</label></div>
     <div class="radio"><label><input name="qualifier" required="" type="radio" value="No" />No</label></div>
+  </div>
+</div>
+<!-- start gender -->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      Gender<span style="color:red;">*</span>
+    </strong>
+    <div class="radio"><label><input name="Gender" required="" type="radio" value="Male" />Male</label></div>
+    <div class="radio"><label><input name="Gender" required="" type="radio" value="Female" />Female</label></div>
+    <div class="radio"><label><input name="Gender" required="" type="radio" value="Other" />Other</label></div>
+    <div class="radio"><label><input name="Gender" required="" type="radio" value="Prefer not to say" />Prefer not to say</label></div>
+  </div>
+</div>
+<!-- Age -->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      Age<span style="color:red;">*</span>
+    </strong>
+    <div class="radio"><label><input name="Age" required="" type="radio" value="18-24"/>18-24</label></div>
+    <div class="radio"><label><input name="Age" required="" type="radio" value="25-34"/>25-34</label></div>
+    <div class="radio"><label><input name="Age" required="" type="radio" value="35-44"/>35-44</label></div>
+    <div class="radio"><label><input name="Age" required="" type="radio" value="45-54"/>45-54</label></div>
+    <div class="radio"><label><input name="Age" required="" type="radio" value="55-64"/>55-64</label></div>
+    <div class="radio"><label><input name="Age" required="" type="radio" value="65+"/>65+</label></div>
+  </div>
+</div>
+<!-- start education -->
+<div class="panel panel-default">
+<div class="panel-body">
+    <strong>
+      Education<span style="color:red;">*</span>
+    </strong>
+    <div class="radio"><label><input name="Education" required="" type="radio" value="Highschool" />Highschool/GED</label></div>
+    <div class="radio"><label><input name="Education" required="" type="radio" value="Some college" />Some College</label></div>
+    <div class="radio"><label><input name="Education" required="" type="radio" value="Bachelors degree" />Bachelor&#39;s Degree</label></div>
+    <div class="radio"><label><input name="Education" required="" type="radio" value="Masters degree" />Master&#39;s Degree</label></div>
+    <div class="radio"><label><input name="Education" required="" type="radio" value="Doctoral" />Doctoral (including JD,MD)</label></div>
+  </div>
+</div>
+<!-- start occupation -->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      Occupation<span style="color:red;">*</span>
+    </strong>
+    <div class="form-group">
+      <label for="Role">Title:</label>
+      <input class="form-control" id="surveycode" name="surveycode" placeholder="" required="" type="text" />
+    </div>
+  </div>
+</div>
+<!-- start salary -->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      Salary<span style="color:red;">*</span>
+    </strong>
+    <div class="radio"><label><input name="Salary" required="" type="radio" value="Less than 24,000" />$0-$23,999</label></div>
+    <div class="radio"><label><input name="Salary" required="" type="radio" value="$24,000 - $34,999" />$24,000 - $34,999</label></div>
+    <div class="radio"><label><input name="Salary" required="" type="radio" value="$35,000 - $44,999" />$35,000 - $44,999</label></div>
+    <div class="radio"><label><input name="Salary" required="" type="radio" value="$45,000 - $74,999" />$45,000 - $74,999</label></div>
+    <div class="radio"><label><input name="Salary" required="" type="radio" value="$75,000 - $99,999" />$75,000 - $99,999</label></div>
+    <div class="radio"><label><input name="Salary" required="" type="radio" value="More than $100,000" />$100,000+</label></div>
   </div>
 </div>
 <!-- New/Used -->
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      2. Are you buying...<span style="color:red;">*</span>
+      Did you buy...<span style="color:red;">*</span>
     </strong>
     <div class="radio"><label><input name="status" required="" type="radio" value="New" />New</label></div>
     <div class="radio"><label><input name="status" required="" type="radio" value="Used" />Used</label></div>
@@ -28,12 +95,13 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      3. What do you know about your next vehicle? (check all that apply)<span style="color:red;">*</span>
+     Which attributes were you certain of before you started your search? (check all that apply)<span style="color:red;">*</span>
     </strong>
     <div class="checkbox"><label><input name="details" type="checkbox" value="Body style" />Body style (Sedan, SUV/Crossover, Truck etc.)</label></div>
     <div class="checkbox"><label><input name="details" type="checkbox" value="Year" />Year</label></div>
     <div class="checkbox"><label><input name="details" type="checkbox" value="Make" />Make</label></div>
     <div class="checkbox"><label><input name="details" type="checkbox" value="Model" />Model</label></div>
+    <div class="checkbox"><label><input name="details" type="checkbox" value="Features" />Features/technology</label></div>
     <div class="checkbox"><label><input name="details" type="checkbox" value="Don't know" />Don't know</label></div>
   </div>
 </div>
@@ -41,7 +109,7 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      4. Which online tools do you find most helpful? (check all that apply)<span style="color:red;">*</span>
+      Which online tools do you find most helpful? (check all that apply)<span style="color:red;">*</span>
     </strong>
     <div class="checkbox"><label><input name="tools" type="checkbox" value="Compare models" />Compare models</label></div>
     <div class="checkbox"><label><input name="tools" type="checkbox" value="Build and configure" />Build/configure &amp; price</label></div>
@@ -55,64 +123,63 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      5. Which devices do you use while shopping for a new car?<span style="color:red;">*</span>
+      Which devices do you use while shopping for a new car?<span style="color:red;">*</span>
     </strong>
     <div class="checkbox"><label><input name="devices" type="checkbox" value="Desktop/laptop" />Desktop/laptop</label></div>
     <div class="checkbox"><label><input name="devices" type="checkbox" value="Tablet" />Tablet</label></div>
     <div class="checkbox"><label><input name="devices" type="checkbox" value="Mobile phone" />Mobile phone</label></div>
   </div>
 </div>
+<!-- Journey -->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      How do you currently shop for cars?<span style="color:red;">*</span>
+    </strong>
+    <textarea class="form-control" cols="250" id="Journey" name="Journey" required="" rows="6"></textarea>
+  </div>
+</div>
 <!-- Purchase Intent -->
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      6. Why are you purchasing a new vehicle?<span style="color:red;">*</span>
+      What prompted this purchase?<span style="color:red;">*</span>
     </strong>
-    <div class="form-group">
-      <textarea class="form-control" cols="250" id="PurchaseIntent" name="PurchaseIntent" required="" rows="6"></textarea>
-    </div>
-</div>
-<!-- Time -->
-<div class="panel panel-default">
-  <div class="panel-body">
-    <strong>
-      7. Where are you when shopping for a car?<span style="color:red;">*</span>
-    </strong>
-    <div class="form-group">
-      <textarea class="form-control" cols="250" id="Location" name="Location" required="" rows="6"></textarea>
-    </div>
-  </div>
-</div>
-<!-- Time -->
-<div class="panel panel-default">
-  <div class="panel-body">
-    <strong>
-      8. Describe your process for finding the right vehicle, which factors most influence your final decision?<span style="color:red;">*</span>
-    </strong>
-    <div class="form-group">
-      <textarea class="form-control" cols="250" id="Process" name="Process" required="" rows="6"></textarea>
-    </div>
-  </div>
+    <textarea class="form-control" cols="250" id="PurchaseIntent" name="PurchaseIntent" required="" rows="6"></textarea>
 </div>
 <!-- Pain points-->
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      9. What do you dislike the most about buying a car?<span style="color:red;">*</span>
+      What do you dislike about shopping for cars?<span style="color:red;">*</span>
     </strong>
-    <div class="form-group">
-      <textarea class="form-control" cols="250" id="PainPoints" name="PainPoints" required="" rows="6"></textarea>
-    </div>
+    <textarea class="form-control" cols="250" id="PainPoints" name="PainPoints" required="" rows="6"></textarea>
+  </div>
+</div>
+<!-- Triggers -->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      How do you learn about new cars? (Friends/family, radio, TV or websites.)<span style="color:red;">*</span>
+    </strong>
+    <textarea class="form-control" cols="250" id="Triggers" name="Triggers" required="" rows="6"></textarea>
+  </div>
+</div>
+<!-- Context -->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      Where are you when shopping for a car? (Describe your surroundings.)<span style="color:red;">*</span>
+    </strong>
+    <textarea class="form-control" cols="250" id="Location" name="Location" required="" rows="6"></textarea>
   </div>
 </div>
 <!-- Improvements-->
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      10. How could shopping for cars online be easier?<span style="color:red;">*</span>
+      How could shopping for cars online be easier?<span style="color:red;">*</span>
     </strong>
-    <div class="form-group">
-      <textarea class="form-control" cols="250" id="OnlineShopping" name="OnlineShopping" required="" rows="6"></textarea>
-    </div>
+    <textarea class="form-control" cols="250" id="Improvements" name="Improvements" required="" rows="6"></textarea>
   </div>
 </div>
