@@ -1,7 +1,5 @@
-<strong>Description</strong>
-<p>We are conducting a survey to better understand how our target audience shops for cars online. Please answer the following questions to the best of your knowledge.</p>
-<strong>Acceptance Criteria</strong>
-<p>Your response may or may not be accepted based on internal acceptance criteria.</p>
+<p>We are conducting a survey to better understand how our customers shop for cars online. Please answer all of the questions to the best of your ability.</p>
+<p><strong>Acceptance Criteria:&nbsp;</strong>Submissions that answer all the questions have a better chance of being accepted.</p>
 <!-- Qualifier -->
 <div class="panel panel-default">
   <div class="panel-body">
@@ -12,21 +10,46 @@
     <div class="radio"><label><input name="qualifier" required="" type="radio" value="No" />No</label></div>
   </div>
 </div>
-<!-- Age -->
+<!-- start education -->
+<div class="panel panel-default">
+<div class="panel-body">
+    <strong>
+      2. Education<span style="color:red;">*</span>
+    </strong>
+    <div class="radio"><label><input name="Education" required="" type="radio" value="Highschool" />Highschool/GED/Other Equivalent</label></div>
+    <div class="radio"><label><input name="Education" required="" type="radio" value="Some college" />Some College</label></div>
+    <div class="radio"><label><input name="Education" required="" type="radio" value="Bachelors degree" />Bachelor&#39;s Degree</label></div>
+    <div class="radio"><label><input name="Education" required="" type="radio" value="Masters degree" />Master&#39;s Degree</label></div>
+    <div class="radio"><label><input name="Education" required="" type="radio" value="Doctoral" />Doctoral (including JD,MD)</label></div>
+  </div>
+</div>
+<!-- start occupation -->
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      2. How old are you?<span style="color:red;">*</span>
+      3. Occupation
     </strong>
-    <div class="radio"><label><input name="Age" required="" type="radio" value="18-24"/>18-24</label></div>
-    <div class="radio"><label><input name="Age" required="" type="radio" value="25-34"/>25-34</label></div>
-    <div class="radio"><label><input name="Age" required="" type="radio" value="35-44"/>35-44</label></div>
-    <div class="radio"><label><input name="Age" required="" type="radio" value="45-54"/>45-54</label></div>
-    <div class="radio"><label><input name="Age" required="" type="radio" value="55-64"/>55-64</label></div>
-    <div class="radio"><label><input name="Age" required="" type="radio" value="65+"/>65+</label></div>
+    <div class="form-group">
+      <label for="JobTitle">Title:</label>
+      <input class="form-control" id="JobTitle" name="JobTitle" placeholder="" type="text" />
+    </div>
   </div>
 </div>
-<!-- instructions -->
+<!-- start salary -->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      4. Salary<span style="color:red;">*</span>
+    </strong>
+    <div class="radio"><label><input name="Salary" required="" type="radio" value="Less than 24,000" />$0-$23,999</label></div>
+    <div class="radio"><label><input name="Salary" required="" type="radio" value="$24,000 - $34,999" />$24,000 - $34,999</label></div>
+    <div class="radio"><label><input name="Salary" required="" type="radio" value="$35,000 - $44,999" />$35,000 - $44,999</label></div>
+    <div class="radio"><label><input name="Salary" required="" type="radio" value="$45,000 - $74,999" />$45,000 - $74,999</label></div>
+    <div class="radio"><label><input name="Salary" required="" type="radio" value="$75,000 - $99,999" />$75,000 - $99,999</label></div>
+    <div class="radio"><label><input name="Salary" required="" type="radio" value="More than $100,000" />$100,000+</label></div>
+  </div>
+</div>
+<!-- Motivations and Behaviors -->
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
@@ -38,7 +61,7 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      It is complicated to shop for cars online.
+      5. It is complicated to shop for cars online.<span style="color:red;">*</span>
     </strong>
     <div class="radio"><label><input name="ShopOnline" required="" type="radio" value="Strongly disagree"/>Strongly disagree</label></div>
     <div class="radio"><label><input name="ShopOnline" required="" type="radio" value="Disagree"/>Disagree</label></div>
@@ -51,7 +74,7 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      It is complicated to research cars online.
+      6. It is complicated to research cars online.<span style="color:red;">*</span>
     </strong>
     <div class="radio"><label><input name="ResearchOnline" required="" type="radio" value="Strongly disagree"/>Strongly disagree</label></div>
     <div class="radio"><label><input name="ResearchOnline" required="" type="radio" value="Disagree"/>Disagree</label></div>
@@ -64,7 +87,7 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      It is complicated to negotiate with salespeople.
+      7. It is complicated to negotiate with salespeople.<span style="color:red;">*</span>
     </strong>
     <div class="radio"><label><input name="Negotiate" required="" type="radio" value="Strongly disagree"/>Strongly disagree</label></div>
     <div class="radio"><label><input name="Negotiate" required="" type="radio" value="Disagree"/>Disagree</label></div>
@@ -73,48 +96,47 @@
     <div class="radio"><label><input name="Negotiate" required="" type="radio" value="Strongly Agree"/>Strongly Agree</label></div>
   </div>
 </div>
-<!-- User Journey -->
 <!-- Purchase Intent -->
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      What prompted this purchase?<span style="color:red;">*</span>
+      8. Why did you buy a new/used car?
     </strong>
-    <textarea class="form-control" cols="250" id="PurchaseIntent" name="PurchaseIntent" required="" rows="6"></textarea>
-</div>
-<!-- Pain points-->
-<div class="panel panel-default">
-  <div class="panel-body">
-    <strong>
-      What do you dislike about shopping for cars?<span style="color:red;">*</span>
-    </strong>
-    <textarea class="form-control" cols="250" id="PainPoints" name="PainPoints" required="" rows="6"></textarea>
-  </div>
+    <textarea class="form-control" cols="250" id="PurchaseIntent" name="PurchaseIntent" rows="6"></textarea>
 </div>
 <!-- Triggers -->
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      How do you learn about new cars? (Friends/family, radio, TV or websites.)<span style="color:red;">*</span>
+      9. How do you learn about cars (friends/family, radio, TV or websites.)?
     </strong>
-    <textarea class="form-control" cols="250" id="Triggers" name="Triggers" required="" rows="6"></textarea>
+    <textarea class="form-control" cols="250" id="Triggers" name="Triggers" rows="6"></textarea>
   </div>
 </div>
 <!-- Context -->
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      Where are you when shopping for a car? (Describe your surroundings.)<span style="color:red;">*</span>
+      10. Describe how you currently shop for cars.
     </strong>
-    <textarea class="form-control" cols="250" id="Location" name="Location" required="" rows="6"></textarea>
+    <textarea class="form-control" cols="250" id="Location" name="Location" rows="6"></textarea>
   </div>
 </div>
 <!-- Improvements-->
+<!-- Pain points-->
 <div class="panel panel-default">
   <div class="panel-body">
     <strong>
-      How could shopping for cars online be easier?<span style="color:red;">*</span>
+      11. What do you dislike about shopping for cars?
     </strong>
-    <textarea class="form-control" cols="250" id="Improvements" name="Improvements" required="" rows="6"></textarea>
+    <textarea class="form-control" cols="250" id="PainPoints" name="PainPoints" rows="6"></textarea>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <strong>
+      12. How would you address those problems?
+    </strong>
+    <textarea class="form-control" cols="250" id="Improvements" name="Improvements" rows="6"></textarea>
   </div>
 </div>
