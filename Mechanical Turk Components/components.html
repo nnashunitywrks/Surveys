@@ -1,0 +1,150 @@
+<!--Radio Buttons-->
+<h3>Radio Buttons</h3>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <label>1. Generic question text</label>
+    <div class="radio"><label><input name="foo" required="" type="radio" value="foo" />foo</label></div>
+    <div class="radio"><label><input name="foo" required="" type="radio" value="foo" />foo</label></div>
+  </div>
+</div>
+<!--Checkbox-->
+<h3>Checkboxes</h3>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <label>1. Generic question text</label>
+    <div class="checkbox"><label><input name="bar" type="checkbox" value="bar" />bar</label></div>
+    <div class="checkbox"><label><input name="bar" type="checkbox" value="bar" />bar</label></div>
+    <div class="checkbox"><label><input name="bar" type="checkbox" value="bar" />bar</label></div>
+  </div>
+</div>
+<!--Multi-select-->
+<h3>Multi-select</h3>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <label>1. Generic question text</label>
+    <select class="form-control" multiple="multiple" name="foo" size="5">
+      <!--add as many or few options-->
+      <option>Option #1</option>
+      <option>Option #2</option>
+      <option>Option #3</option>
+      <option>Option #4</option>
+    </select>
+  </div>
+</div>
+<!-- Single line text -->
+<h3>Single-line Text Box</h3>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="form-group fieldset"><label for="companyName">Name of the Company:</label> <input class="form-control" id="companyName" name="companyName" placeholder="e.g. ABC Inc." type="text" /></div>
+  </div>
+</div>
+<!-- Textarea -->
+<h3>Textarea</h3>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="form-group"><label for="WritingTexts">Write the description below:</label><textarea class="form-control" cols="250" id="WritingTexts" name="WritingTexts" required="" rows="6"></textarea></div>
+  </div>
+</div>
+<!--Survey Link-->
+<h3>Survey Link</h3>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <table class="table table-condensed table-bordered">
+    	<colgroup>
+    		<col class="col-xs-4 col-md-4" />
+    		<col class="col-xs-8 col-md-8" />
+    	</colgroup>
+    	<tbody>
+    		<tr>
+    			<td><label>Survey link:</label></td>
+    			<td><a class="dont-break-out" href="http://[example.com/survey345.html]" target="_blank">http://example.com/survey345.html</a></td>
+    		</tr>
+    	</tbody>
+    </table>
+    <div class="form-group"><label for="surveycode">Provide the survey code here:</label> <input class="form-control" id="surveycode" name="surveycode" placeholder="e.g. 123456" required="" type="text" /></div>
+  </div>
+</div>
+<!--Preference Test-->
+<h3>Preference Test</h3>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6">
+      <div class="form-group">
+        <label class="btn btn-default img-btn">
+          <span class="clearfix img-label">
+            <input autocomplete="off" class="pull-left img-options" id="itemA" name="choice" required="" type="radio" value="optionA" />
+            <span class="pull-left">
+              <strong>Option A</strong>
+            </span>
+          </span>
+          <span class="img-wrap">
+            <img alt="Option A" class="img-thumbnail img-check" src="${image_A_url}" />
+          </span>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6">
+      <div class="form-group">
+        <label class="btn btn-default img-btn">
+          <span class="clearfix img-label">
+            <input autocomplete="off" class="pull-left img-options" id="itemB" name="choice" required="" type="radio" value="OptionB" />
+            <span class="pull-left">
+              <strong>Option B</strong>
+            </span>
+          </span>
+          <span class="img-wrap">
+            <img alt="Option B" class="img-thumbnail img-check" src="${image_A_url}" />
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+<!--For local development only-->
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" /><!-- Open internal style sheet -->
+<style type="text/css">
+  #CategoryInputs{display: block;margin-top: 10px;}
+  #collapseTrigger{color:#fff;display: block;text-decoration: none;}
+  #checkbox_none{display: inline-block;top:3px;}
+
+  #instructionBody table{font-size: 14px;margin-top: 10px;}
+  #instructionBody table caption{text-align: left;padding: 0 0 5px 0;}
+
+  #label_none{margin: 0;padding: 5px 10px;}
+  #label_none span{margin-left: 15px;}
+
+  #submitButton{white-space: normal;}
+
+  .content{margin-bottom: 15px;}
+  .col-margin{padding: 0 2px 0 0;margin-bottom: 5px;}
+  .col-margin:last-child{padding-right: 0;}
+  .cost-row-footer{margin-bottom: 15px;margin-top: -15px;}
+
+  .dont-break-out {overflow-wrap: break-word;word-wrap: break-word;-ms-word-break: break-all;word-break: break-all;word-break: break-word;-ms-hyphens: auto;-moz-hyphens: auto;-webkit-hyphens: auto;hyphens: auto;}
+
+  .form-group, .form-group.col-margin{width: 100%;margin-bottom: 5px;}
+  .form-group.fieldset, .fieldset{margin-bottom: 15px;}
+
+  input.form-control{ width: 100%;}
+  textarea.form-control{height: 200px; /* Fix for textarea overlapping submit button */}
+
+  .group-label{display: block;}
+
+  .image{margin-bottom: 15px;}
+  .img-background{background: #5cb85c;}  .img-btn{padding: 0;display: block;}
+  .img-check{padding:0;}
+  .img-label{padding: 6px 6px 0 6px;min-width: 300px;display: block;}
+  .img-wrap{background: transparent;padding: 6px 12px;display: block;}
+
+  .radio:first-of-type{margin-top: -5px;}
+  .radio-inline>label{font-weight: normal;}
+
+  .selected{background: #dff0d8;}
+
+  .thumbnail:hover{border: 1px solid #337ab7;}
+  .thumbnail img{height:180px;}
+  .thumbnail label:hover {cursor: pointer;}
+  .thumbnail input{display: block;position: absolute;top:0;left:0;}
+</style>

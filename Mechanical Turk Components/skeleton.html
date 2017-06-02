@@ -1,58 +1,66 @@
-<!-- HIT template: Survey-v3.0 --><!-- The following snippet enables the 'responsive' behavior on smaller screens -->
-<meta content="width=device-width,initial-scale=1" name="viewport" />
-<section class="container" id="Survey">
-  <!-- Instructions -->
-  <div class="row">
-    <div class="col-xs-12 col-md-12">
-      <div class="panel panel-primary"><!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Survey Link Instructions</strong> <span class="collapse-text">(Click to expand)</span> </a>
-        <div class="panel-body" id="instructionBody">
-          <strong>Description</strong>
-          <p>Simple statement about the purpose of the survey.</p>
-          <strong>Instructions</strong>
-          <ol>
-            <li>foo</li>
-            <li>bar</li>
-            <li>foo</li>
-          </ol>
-          <strong>Acceptance Criteria</strong>
-          <p>Describe what constitutes a satisfactory HIT.</p>
-        </div>
+<!--Instructions-->
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    <div class="panel panel-primary"><!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Survey Instructions</strong> <span class="collapse-text">(Click to expand)</span> </a>
+      <div class="panel-body" id="instructionBody">
+        <p>Enter instructions for your survey:</p>
+        <ul>
+        	<li>Instruction #1</li>
+        	<li>Instruction #2</li>
+        	<li>Instruction #3</li>
+        </ul>
       </div>
     </div>
   </div>
+</div>
 <!-- End Instructions -->
-<!-- Survey Layout-->
-<!-- End Survey Layout-->
-</section>
+<!-- Begin Survey Layout -->
+<!-- End Survey Layout -->
 <!--For local development only-->
-<!-- Please note that Bootstrap CSS/JS and JQuery are 3rd party libraries that may update their url/code at any time. Amazon Mechanical Turk (MTurk) is including these libraries as a default option for you, but is not responsible for any changes to the external libraries --><!-- External CSS references -->
 <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" /><!-- Open internal style sheet -->
-  <style type="text/css">
-  #collapseTrigger {
-    color:#fff;
-    display: block;
-    text-decoration: none;
-  }
+<style type="text/css">
+  #CategoryInputs{display: block;margin-top: 10px;}
+  #collapseTrigger{color:#fff;display: block;text-decoration: none;}
+  #checkbox_none{display: inline-block;top:3px;}
 
-  #submitButton {
-    white-space: normal;
-  }
-  .image {
-    margin-bottom: 15px;
-  }
+  #instructionBody table{font-size: 14px;margin-top: 10px;}
+  #instructionBody table caption{text-align: left;padding: 0 0 5px 0;}
 
-  /* CSS for breaking long words/urls */
-  .dont-break-out {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -ms-word-break: break-all;
-    word-break: break-all;
-    word-break: break-word;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-  }
+  #label_none{margin: 0;padding: 5px 10px;}
+  #label_none span{margin-left: 15px;}
+
+  #submitButton{white-space: normal;}
+
+  .content{margin-bottom: 15px;}
+  .col-margin{padding: 0 2px 0 0;margin-bottom: 5px;}
+  .col-margin:last-child{padding-right: 0;}
+  .cost-row-footer{margin-bottom: 15px;margin-top: -15px;}
+
+  .dont-break-out {overflow-wrap: break-word;word-wrap: break-word;-ms-word-break: break-all;word-break: break-all;word-break: break-word;-ms-hyphens: auto;-moz-hyphens: auto;-webkit-hyphens: auto;hyphens: auto;}
+
+  .form-group, .form-group.col-margin{width: 100%;margin-bottom: 5px;}
+  .form-group.fieldset, .fieldset{margin-bottom: 15px;}
+
+  input.form-control{ width: 100%;}
+  textarea.form-control{height: 200px; /* Fix for textarea overlapping submit button */}
+
+  .group-label{display: block;}
+
+  .image{margin-bottom: 15px;}
+  .img-background{background: #5cb85c;}  .img-btn{padding: 0;display: block;}
+  .img-check{padding:0;}
+  .img-label{padding: 6px 6px 0 6px;min-width: 300px;display: block;}
+  .img-wrap{background: transparent;padding: 6px 12px;display: block;}
+
+  .radio:first-of-type{margin-top: -5px;}
+  .radio-inline>label{font-weight: normal;}
+
+  .selected{background: #dff0d8;}
+
+  .thumbnail:hover{border: 1px solid #337ab7;}
+  .thumbnail img{height:180px;}
+  .thumbnail label:hover {cursor: pointer;}
+  .thumbnail input{display: block;position: absolute;top:0;left:0;}
 </style>
 <!-- Close internal style sheet --><!-- External JS references --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4" crossorigin="anonymous"></script><!-- Open internal javascript --><script>
   $(document).ready(function() {
